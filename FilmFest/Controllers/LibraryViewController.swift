@@ -11,17 +11,13 @@ import UIKit
 class LibraryViewController: UIViewController {
 
     @IBOutlet weak var libraryTableView: UITableView!
+    @IBOutlet var dataService: MovieLibraryDataService!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.libraryTableView.dataSource = dataService
+        self.libraryTableView.delegate = dataService
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

@@ -17,6 +17,8 @@
 		992795BA2AC69CED001195C6 /* MovieManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992795B92AC69CED001195C6 /* MovieManagerTests.swift */; };
 		992795BC2AC69D73001195C6 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992795BB2AC69D73001195C6 /* MovieManager.swift */; };
 		992795BE2AC6AD18001195C6 /* LibraryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992795BD2AC6AD18001195C6 /* LibraryViewControllerTests.swift */; };
+		992795C12AC6B3BF001195C6 /* MovieLibraryDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992795C02AC6B3BF001195C6 /* MovieLibraryDataService.swift */; };
+		992795C42AC6B70A001195C6 /* MovieLibraryDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992795C32AC6B70A001195C6 /* MovieLibraryDataServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		992795B92AC69CED001195C6 /* MovieManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManagerTests.swift; sourceTree = "<group>"; };
 		992795BB2AC69D73001195C6 /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 		992795BD2AC6AD18001195C6 /* LibraryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewControllerTests.swift; sourceTree = "<group>"; };
+		992795C02AC6B3BF001195C6 /* MovieLibraryDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieLibraryDataService.swift; path = ../../../../../Documents/MovieLibraryDataService.swift; sourceTree = "<group>"; };
+		992795C32AC6B70A001195C6 /* MovieLibraryDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLibraryDataServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +89,13 @@
 		8FD54622200D1A960046A5C4 /* FilmFest */ = {
 			isa = PBXGroup;
 			children = (
+				992795BF2AC6B383001195C6 /* Data Services */,
 				992795B62AC69C8B001195C6 /* Controllers */,
 				992795B52AC69C84001195C6 /* Models */,
 				8FD54623200D1A960046A5C4 /* AppDelegate.swift */,
 				8FD54627200D1A960046A5C4 /* Main.storyboard */,
-				8FD5462A200D1A960046A5C4 /* Assets.xcassets */,
 				8FD5462C200D1A960046A5C4 /* LaunchScreen.storyboard */,
+				8FD5462A200D1A960046A5C4 /* Assets.xcassets */,
 				8FD5462F200D1A960046A5C4 /* Info.plist */,
 			);
 			path = FilmFest;
@@ -99,6 +104,7 @@
 		8FD54637200D1A960046A5C4 /* FilmFestTests */ = {
 			isa = PBXGroup;
 			children = (
+				992795C22AC6B6CA001195C6 /* Test Data Services */,
 				992795B82AC69CC4001195C6 /* Test Controllers */,
 				992795B72AC69CAD001195C6 /* Test Models */,
 				8FD5463A200D1A960046A5C4 /* Info.plist */,
@@ -138,6 +144,22 @@
 				992795BD2AC6AD18001195C6 /* LibraryViewControllerTests.swift */,
 			);
 			path = "Test Controllers";
+			sourceTree = "<group>";
+		};
+		992795BF2AC6B383001195C6 /* Data Services */ = {
+			isa = PBXGroup;
+			children = (
+				992795C02AC6B3BF001195C6 /* MovieLibraryDataService.swift */,
+			);
+			path = "Data Services";
+			sourceTree = "<group>";
+		};
+		992795C22AC6B6CA001195C6 /* Test Data Services */ = {
+			isa = PBXGroup;
+			children = (
+				992795C32AC6B70A001195C6 /* MovieLibraryDataServiceTests.swift */,
+			);
+			path = "Test Data Services";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +270,7 @@
 				8FD54626200D1A960046A5C4 /* LibraryViewController.swift in Sources */,
 				8FD54624200D1A960046A5C4 /* AppDelegate.swift in Sources */,
 				992795B42AC69A08001195C6 /* Movie.swift in Sources */,
+				992795C12AC6B3BF001195C6 /* MovieLibraryDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992795C42AC6B70A001195C6 /* MovieLibraryDataServiceTests.swift in Sources */,
 				992795BA2AC69CED001195C6 /* MovieManagerTests.swift in Sources */,
 				992795B22AC698B7001195C6 /* MovieStructTests.swift in Sources */,
 				992795BE2AC6AD18001195C6 /* LibraryViewControllerTests.swift in Sources */,
